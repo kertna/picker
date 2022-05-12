@@ -86,8 +86,15 @@ function DateHeader<DateType>(props: DateHeaderProps<DateType>) {
   const monthYearNodes = locale.monthBeforeYear ? [monthNode, yearNode] : [yearNode, monthNode];
 
   return (
-    <Header
-     
+   <Header
+      {...props}
+      prefixCls={headerPrefixCls}
+      onSuperPrev={onPrevYear}
+      onPrev={onPrevMonth}
+      onNext={onNextMonth}
+      onSuperNext={onNextYear}
+    >
+      {monthYearNodes}
     </Header>
   );
 }
