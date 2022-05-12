@@ -94,6 +94,7 @@ function DateHeader<DateType>(props: DateHeaderProps<DateType>) {
       onNext={onNextMonth}
       onSuperNext={onNextYear}
     >
+      hello
       {monthYearNodes}
     </Header>
   );
