@@ -87,15 +87,7 @@ function DateHeader<DateType>(props: DateHeaderProps<DateType>) {
 
   return (
     <Header
-      {...props}
-      prefixCls={headerPrefixCls}
-      onSuperPrev={onPrevYear}
-      onPrev={onPrevMonth}
-      onNext={onNextMonth}
-      onSuperNext={onNextYear}
-    >
-      hello
-      {monthYearNodes}
+     
     </Header>
   );
 }
